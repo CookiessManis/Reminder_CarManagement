@@ -46,21 +46,56 @@
       font-family: 'Poppins', sans-serif !important;
     "
   >
-    <!-- hamburger -->
-    <div class="px-3 py-3">
-      <a
-        data-bs-toggle="offcanvas"
-        href="#offcanvasExample"
-        role="button"
-        aria-controls="offcanvasExample"
-      >
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="px-3 py-3">
+          <a
+            data-bs-toggle="offcanvas"
+            href="#offcanvasDarkNavbar"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
+        <div
+          class="offcanvas offcanvas-start"
+          style="background-color: #f7e7d2"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header justify-content-end">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Dashboard Utama</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pemeliharaan Kendaraan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Daftar Penggunaan Armada</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- hamburger -->
 
     <!-- logo -->
     <div class="text-center" style="padding-top: 17px">
@@ -205,8 +240,7 @@
       id="offcanvasExample"
       aria-labelledby="offcanvasExampleLabel"
     >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <div class="offcanvas-header justify-content-end">
         <button
           type="button"
           class="btn-close"
@@ -215,17 +249,10 @@
         ></button>
       </div>
       <div class="offcanvas-body">
-        <ul class="list-group">
-          <a href="index.html"
-            ><li class="list-group-item active" aria-current="true">
-              Pemeliharaan Kendaraan
-            </li></a
-          >
-          <a href="" style="text-decoration: none"
-            ><li class="list-group-item" aria-current="true">
-              daftar Pengguna armada
-            </li></a
-          >
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
         </ul>
       </div>
     </div>
