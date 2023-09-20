@@ -38,6 +38,8 @@
             <a
               href=""
               class="btn btn-primary fw-semibold"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
               style="font-size: 15px"
               ><span style="color: white"
                 ><i class="fa-solid fa-plus"></i
@@ -174,6 +176,132 @@
     <div
       class="modal fade"
       id="Detail"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Kelola Kendaraan
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- nomer kendaraan -->
+            <div class="pt-2">
+              <label
+                for=""
+                class="form-label text-black"
+                style="letter-spacing: 1.5px; font-size: 10px"
+                ><h6>Nomer Kendaraan</h6></label
+              >
+              <div class="input-group">
+                <input type="text" class="form-control shadow-sm border-2" />
+              </div>
+            </div>
+            <!-- Jenis kendaraan -->
+            <div class="pt-2">
+              <label
+                for=""
+                class="form-label text-black"
+                style="letter-spacing: 1.5px; font-size: 10px"
+                ><h6>Jenis Kendaraan</h6></label
+              >
+              <div class="input-group">
+                <input type="text" class="form-control shadow-sm border-2" />
+              </div>
+            </div>
+            <!-- Pajak 5 Tahunan -->
+            <div class="pt-2">
+              <label
+                for=""
+                class="form-label text-black"
+                style="letter-spacing: 1.5px; font-size: 10px"
+                ><h6>Pajak 5 Tahunan</h6></label
+              >
+              <div class="input-group">
+                <input type="date" class="form-control shadow-sm border-2" />
+              </div>
+            </div>
+            <!-- Pajak Tahunan -->
+            <div class="pt-2">
+              <label
+                for=""
+                class="form-label text-black"
+                style="letter-spacing: 1.5px; font-size: 10px"
+                ><h6>Pajak Tahunan</h6></label
+              >
+              <div class="input-group">
+                <input type="date" class="form-control shadow-sm border-2" />
+              </div>
+            </div>
+            <!-- KIR -->
+            <div class="pt-2">
+              <label
+                for=""
+                class="form-label text-black"
+                style="letter-spacing: 1.5px; font-size: 10px"
+                ><h6>KIR</h6></label
+              >
+              <div class="input-group">
+                <input type="date" class="form-control shadow-sm border-2" />
+              </div>
+            </div>
+            <!-- Jadwal Service  -->
+            <div class="pt-2">
+              <label
+                for=""
+                class="form-label text-black"
+                style="letter-spacing: 1.5px; font-size: 10px"
+                ><h6>Jadwal Service</h6></label
+              >
+              <div class="input-group">
+                <input type="date" class="form-control shadow-sm border-2" />
+              </div>
+            </div>
+            <!-- Catatan Keluhan -->
+            <div class="pt-2">
+              <label
+                for=""
+                class="form-label text-black"
+                style="letter-spacing: 1.5px; font-size: 10px"
+                ><h6>Catatan Keluhan / Kerusakan</h6></label
+              >
+              <div class="input-group">
+                <textarea
+                  class="form-control"
+                  placeholder="Catatan dan Keluhan Kendaraan"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              style="font-size: 12px; letter-spacing: 1.5px"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal tambah -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
