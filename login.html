@@ -17,8 +17,10 @@
 
     <!-- bootstrap -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
   </head>
@@ -67,20 +69,22 @@
                       class="form-group text-center"
                       style="padding-top: 41px"
                     >
-                      <button
-                        type="submit"
-                        class="btn btn-lg btn-block fw-semibold text-white"
-                        style="
-                          padding-right: 30px;
-                          padding-left: 30px;
-                          font-size: 15px;
-                          background-color: #b16810;
-                          box-shadow: 0 4px 2px -2px gray;
-                        "
-                        tabindex="4"
-                      >
-                        Login
-                      </button>
+                      <a href="login.html">
+                        <button
+                          type="submit"
+                          class="btn btn-lg btn-block fw-semibold text-white"
+                          style="
+                            padding-right: 30px;
+                            padding-left: 30px;
+                            font-size: 15px;
+                            background-color: #b16810;
+                            box-shadow: 0 4px 2px -2px gray;
+                          "
+                          tabindex="4"
+                        >
+                          Login
+                        </button>
+                      </a>
                     </div>
                   </form>
                 </div>
@@ -90,7 +94,13 @@
         </div>
       </div>
     </section>
+
     <!-- Js -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
   </body>
 </html>
