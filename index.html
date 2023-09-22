@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Login</title>
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,6 +13,8 @@
       rel="stylesheet"
     />
 
+    <!-- css -->
+
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -20,421 +22,81 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
-    <!-- font awesome -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body class="" style="background-color: #cfb89c">
-    <!-- sidebar -->
-
-    <div class="" style="padding-top: 177px">
-      <div class="bg-white">
-        <!-- search input -->
-        <div class="d-flex justify-content-between px-2 py-2">
-          <form action="">
-            <a
-              href=""
-              class="btn btn-primary fw-semibold"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              style="font-size: 15px"
-              ><span style="color: white"
-                ><i class="fa-solid fa-plus"></i
-              ></span>
-              Tambah
-            </a>
-          </form>
-          <div class="">
-            <div class="ms-auto" style="width: 180px; right: 20px">
-              <div class="d-flex justify-content-end border border-black">
-                <!-- search input -->
-                <form class="d-flex" role="search">
-                  <input type="text" class="form-control" />
-                  <button type="submit" class="btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </form>
+  <body
+    style="
+      background-color: #cfb89c;
+      font-family: 'Poppins', sans-serif !important;
+    "
+  >
+    <!-- container login -->
+    <section class="section" style="padding-bottom: 50px">
+      <div class="container mt-3">
+        <div class="row mx-lg-auto" style="padding-top: 93px">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8 mx-auto">
+            <div class="login-brand" style="text-align: center">
+              <img
+                src="img/logo.svg"
+                style="width: 105px; height: 125px"
+                class=""
+                alt=""
+              />
+            </div>
+            <div style="padding-top: 38px">
+              <div class="card card-primary" style="background-color: #f1eae1">
+                <div class="card-body">
+                  <form action="">
+                    <div class="form-group">
+                      <label
+                        for="username"
+                        class="fw-semibold"
+                        style="font-size: 15px"
+                        >Username</label
+                      >
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="form-group" style="padding-top: 20px">
+                      <label
+                        for="Password"
+                        class="fw-semibold"
+                        style="font-size: 15px"
+                        >Password</label
+                      >
+                      <input type="password" class="form-control" />
+                    </div>
+                    <div
+                      class="form-group text-center"
+                      style="padding-top: 41px"
+                    >
+                      <a
+                        href="dashboard.html"
+                        class="btn btn-lg btn-block fw-semibold text-white"
+                        style="
+                          padding-right: 30px;
+                          padding-left: 30px;
+                          font-size: 15px;
+                          background-color: #b16810;
+                          box-shadow: 0 4px 2px -2px gray;
+                        "
+                      >
+                        Login
+                      </a>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- End Search input -->
-        <div class="table-responsive px-2" style="padding-top: 10px">
-          <table class="table border border-black">
-            <thead>
-              <tr class="align-middle">
-                <th
-                  scope="col"
-                  style="font-size: 15px"
-                  class="text-center border-black border"
-                >
-                  No Kendaraan
-                </th>
-                <th
-                  scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
-                >
-                  Jenis Kendaraan
-                </th>
-                <th
-                  scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
-                >
-                  Pajak 5 Tahunan
-                </th>
-                <th
-                  scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
-                >
-                  Pajak Tahunan
-                </th>
-                <th
-                  scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
-                >
-                  Jadwal KIR
-                </th>
-                <th
-                  scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
-                >
-                  Jadwal Service
-                </th>
-                <th
-                  scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
-                >
-                  Detail
-                </th>
-              </tr>
-            </thead>
-            <tbody class="align-middle">
-              <tr>
-                <td style="font-size: 10px" class="text-center py-3">
-                  AB 4758 CD
-                </td>
-                <td
-                  style="font-size: 10px"
-                  class="text-center border border-black"
-                >
-                  APV
-                </td>
-                <td
-                  style="font-size: 10px"
-                  class="text-center border border-black"
-                >
-                  20/07/2023
-                </td>
-                <td
-                  style="font-size: 10px"
-                  class="text-center border border-black"
-                >
-                  20/07/2023
-                </td>
-                <td
-                  style="font-size: 10px"
-                  class="text-center border border-black"
-                >
-                  20/07/2023
-                </td>
-                <td
-                  style="font-size: 10px"
-                  class="text-center border border-black"
-                >
-                  20/07/2023
-                </td>
-                <td style="font-size: 10px" class="text-center">
-                  <button
-                    class="btn btn-primary px-4 shadow"
-                    style="font-size: 12px"
-                    data-bs-toggle="modal"
-                    data-bs-target="#Detail"
-                  >
-                    Klik
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <!-- btn klik modal detail -->
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="Detail"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Kelola Kendaraan
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <!-- nomer kendaraan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Nomer Kendaraan</h6></label
-              >
-              <div class="input-group">
-                <input type="text" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Jenis kendaraan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Jenis Kendaraan</h6></label
-              >
-              <div class="input-group">
-                <input type="text" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Pajak 5 Tahunan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Pajak 5 Tahunan</h6></label
-              >
-              <div class="input-group">
-                <input type="date" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Pajak Tahunan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Pajak Tahunan</h6></label
-              >
-              <div class="input-group">
-                <input type="date" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- KIR -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>KIR</h6></label
-              >
-              <div class="input-group">
-                <input type="date" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Jadwal Service  -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Jadwal Service</h6></label
-              >
-              <div class="input-group">
-                <input type="date" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Catatan Keluhan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Catatan Keluhan / Kerusakan</h6></label
-              >
-              <div class="input-group">
-                <textarea
-                  class="form-control"
-                  placeholder="Catatan dan Keluhan Kendaraan"
-                  id="floatingTextarea2"
-                  style="height: 100px"
-                ></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-primary"
-              style="font-size: 12px; letter-spacing: 1.5px"
-            >
-              Close
-            </button>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- modal tambah -->
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Kelola Kendaraan
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <!-- nomer kendaraan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Nomer Kendaraan</h6></label
-              >
-              <div class="input-group">
-                <input type="text" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Jenis kendaraan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Jenis Kendaraan</h6></label
-              >
-              <div class="input-group">
-                <input type="text" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Pajak 5 Tahunan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Pajak 5 Tahunan</h6></label
-              >
-              <div class="input-group">
-                <input type="date" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Pajak Tahunan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Pajak Tahunan</h6></label
-              >
-              <div class="input-group">
-                <input type="date" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- KIR -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>KIR</h6></label
-              >
-              <div class="input-group">
-                <input type="date" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Jadwal Service  -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Jadwal Service</h6></label
-              >
-              <div class="input-group">
-                <input type="date" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Catatan Keluhan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Catatan Keluhan / Kerusakan</h6></label
-              >
-              <div class="input-group">
-                <textarea
-                  class="form-control"
-                  placeholder="Catatan dan Keluhan Kendaraan"
-                  id="floatingTextarea2"
-                  style="height: 100px"
-                ></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-primary"
-              style="font-size: 12px; letter-spacing: 1.5px"
-            >
-              Simpan
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    </section>
+    <!-- Js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
-    <!-- fontAwesome -->
-    <script
-      src="https://kit.fontawesome.com/550ef706f2.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
   </body>
 </html>
