@@ -46,6 +46,7 @@
       font-family: 'Poppins', sans-serif !important;
     "
   >
+    <!-- hamburger icon -->
     <nav class="navbar">
       <div class="container-fluid">
         <div class="px-3 py-3">
@@ -69,7 +70,10 @@
           id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel"
         >
-          <div class="offcanvas-header justify-content-end">
+          <div class="offcanvas-header justify-content-between">
+            <p class="fw-semibold" style="font-size: 20px; padding-top: 12px">
+              Dashboard Utama
+            </p>
             <button
               type="button"
               class="btn-close"
@@ -85,8 +89,12 @@
                 >
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">Kelola Kendaraan</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">Pemeliharaan Kendaraan</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="#">Daftar Penggunaan Armada</a>
               </li>
@@ -119,7 +127,7 @@
 
     <div class="px-3 py-3" style="padding-top: 45px">
       <div class="row">
-        <div class="col-6 gx-3 gy-3">
+        <div class="col-6 col-sm-6 col-md-3 gx-3 gy-3">
           <div class="card">
             <div class="card-body">
               <div class="d-flex flex-row">
@@ -128,6 +136,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                     height="3em"
                     viewBox="0 0 640 512"
+                    style="width: 40px; height: 40px"
                   >
                     <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
@@ -139,7 +148,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 gx-3 gy-3">
+        <div class="col-6 col-sm-6 col-md-3 gx-3 gy-3">
           <div class="card">
             <div class="card-body">
               <div class="d-flex flex-row">
@@ -148,6 +157,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                     height="3em"
                     viewBox="0 0 640 512"
+                    style="width: 40px; height: 40px"
                   >
                     <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
@@ -159,7 +169,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 gx-3 gy-3">
+        <div class="col-6 col-sm-6 col-md-3 gx-3 gy-3">
           <div class="card">
             <div class="card-body">
               <div class="d-flex flex-row">
@@ -168,6 +178,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                     height="3em"
                     viewBox="0 0 640 512"
+                    style="width: 40px; height: 40px"
                   >
                     <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
@@ -179,7 +190,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 gx-3 gy-3">
+        <div class="col-6 col-sm-6 col-md-3 gx-3 gy-3">
           <div class="card">
             <div class="card-body">
               <div class="d-flex flex-row">
@@ -188,6 +199,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                     height="3em"
                     viewBox="0 0 640 512"
+                    style="width: 40px; height: 40px"
                   >
                     <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
@@ -201,19 +213,35 @@
         </div>
 
         <div class="table-responsive px-2" style="padding-top: 10px">
-          <table class="table">
+          <table class="table table-bordered" style="border-radius: 5px">
             <thead class="shadow-lg">
               <tr class="align-middle">
-                <th scope="col" style="font-size: 12px" class="text-center">
+                <th
+                  scope="col"
+                  style="font-size: 12px"
+                  class="text-center fw-normal"
+                >
                   Waktu
                 </th>
-                <th scope="col" style="font-size: 12px" class="text-center">
+                <th
+                  scope="col"
+                  style="font-size: 12px"
+                  class="text-center fw-normal"
+                >
                   Armada
                 </th>
-                <th scope="col" style="font-size: 12px" class="text-center">
+                <th
+                  scope="col"
+                  style="font-size: 12px"
+                  class="text-center fw-normal"
+                >
                   Pengemudi
                 </th>
-                <th scope="col" style="font-size: 12px" class="text-center">
+                <th
+                  scope="col"
+                  style="font-size: 12px"
+                  class="text-center fw-normal"
+                >
                   Kegiatan
                 </th>
               </tr>
@@ -230,30 +258,6 @@
             </tbody>
           </table>
         </div>
-      </div>
-    </div>
-
-    <!-- Offcanvas -->
-    <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
-    >
-      <div class="offcanvas-header justify-content-end">
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-        </ul>
       </div>
     </div>
 
