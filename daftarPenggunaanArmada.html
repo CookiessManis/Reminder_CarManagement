@@ -270,6 +270,8 @@
                     type="button"
                     class="btn btn-primary shadow"
                     style="font-size: 12px"
+                    data-bs-toggle="modal"
+                    data-bs-target="#selesaiModal"
                   >
                     Selesai
                   </button>
@@ -440,6 +442,38 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary">Simpan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal Selesai -->
+    <div
+      class="modal fade"
+      id="selesaiModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h4 class="text-center">Catatan Keluhan Armada</h4>
+            <textarea
+              cols="10"
+              rows="5"
+              class="form-control border border-black"
+            ></textarea>
+            <div class="d-flex justify-content-evenly pt-3">
+              <button class="btn btn-danger px-3 shadow-lg">Ya</button>
+              <button
+                class="btn btn-warning px-3 shadow-lg text-white"
+                aria-label="Close"
+                data-bs-dismiss="modal"
+              >
+                Tidak
+              </button>
+            </div>
           </div>
         </div>
       </div>
