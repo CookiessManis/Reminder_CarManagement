@@ -270,8 +270,6 @@
                     type="button"
                     class="btn btn-primary shadow"
                     style="font-size: 12px"
-                    data-bs-toggle="modal"
-                    data-bs-target="#Detail"
                   >
                     Selesai
                   </button>
@@ -358,21 +356,13 @@
             <div class="mb-3"></div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary">Simpan</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- modal Hapus -->
-    <!-- Modal -->
     <div
       class="modal fade"
       id="HapusModal"
@@ -394,6 +384,62 @@
                 Tidak
               </button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal edit -->
+    <div
+      class="modal fade"
+      id="editModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="" class="form-label">Tanggal Kegiatan</label>
+              <input type="date" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Lokasi Kegiatan</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Acara Kegiataan</label>
+              <textarea name="" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Waktu Berangkat</label>
+              <input type="time" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Waktu Pulang</label>
+              <input type="time" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Jumlah Personil</label>
+              <input type="number" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Armada</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Simpan</button>
           </div>
         </div>
       </div>
