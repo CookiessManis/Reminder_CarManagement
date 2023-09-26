@@ -39,6 +39,8 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="src/style.css" />
+
     <!-- font awesome -->
     <script
       defer
@@ -47,7 +49,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="" style="background-color: #cfb89c">
+  <body ">
     <!-- sidebar -->
     <!-- hamburger icon -->
     <nav class="navbar">
@@ -345,129 +347,62 @@
 
     <!-- modal tambah -->
     <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Kelola Kendaraan
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+<div class="modal fade" id="tambahPenggunaanArmada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Kendaraan</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6 mb-3">
+            <label for="" class="form-label">Nomor Kendaraan</label>
+            <input type="text" class="form-control">
           </div>
-          <div class="modal-body">
-            <!-- nomer kendaraan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Nomer Kendaraan</h6></label
-              >
-              <div class="input-group">
-                <input type="text"class="form-control shadow-sm border-2"  />
-              </div>
-            </div>
-            <!-- Jenis kendaraan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Jenis Kendaraan</h6></label
-              >
-              <div class="input-group">
-                <input type="text" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Pajak 5 Tahunan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Pajak 5 Tahunan</h6></label
-              >
-              <div class="input-group">
-                <input type="date" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Pajak Tahunan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Pajak Tahunan</h6></label
-              >
-              <div class="input-group">
-                <input type="date" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- KIR -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>KIR</h6></label
-              >
-              <div class="input-group">
-                <input type="date" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Jadwal Service  -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Jadwal Service</h6></label
-              >
-              <div class="input-group">
-                <input type="date" class="form-control shadow-sm border-2" />
-              </div>
-            </div>
-            <!-- Catatan Keluhan -->
-            <div class="pt-2">
-              <label
-                for=""
-                class="form-label text-black"
-                style="letter-spacing: 1.5px; font-size: 10px"
-                ><h6>Catatan Keluhan / Kerusakan</h6></label
-              >
-              <div class="input-group">
-                <textarea
-                  class="form-control"
-                  placeholder="Catatan dan Keluhan Kendaraan"
-                  id="floatingTextarea2"
-                  style="height: 100px"
-                ></textarea>
-              </div>
+          <div class="col-6 mb-3"></div>
+          <div class="col-6 mb-3">
+            <label for="" class="form-label">Jenis Kendaraan</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-6 mb-3">
+            <label for="" class="form-label">Nama Kendaraan</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-6 mb-3">
+            <label for="" class="form-label">Pajak 5 Tahunan</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-6 mb-3">
+            <label for="" class="form-label">Pajak Kendaraan</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-6 mb-3">
+            <label for="" class="form-label">Jadwal Service</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-6 mb-lg-5">
+            <label for="" class="form-label">KIR</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-12 mb-3">
+            <p class="text-center">Catatan Kerusakan</p>
+           <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea"></label>
             </div>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-primary"
-              style="font-size: 12px; letter-spacing: 1.5px"
-            >
-              Simpan
-            </button>
-          </div>
+
         </div>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
+  </div>
+</div>
+   
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
