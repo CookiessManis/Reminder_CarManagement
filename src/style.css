@@ -12,8 +12,11 @@ body {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .login-text {
+    font-size: 30px;
+  }
+  .th-container {
     font-size: 30px;
   }
 }
