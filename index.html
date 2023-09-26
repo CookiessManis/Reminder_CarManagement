@@ -14,7 +14,6 @@
     />
 
     <!-- css -->
-
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -24,17 +23,12 @@
     />
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body
-    style="
-      background-color: #cfb89c;
-      font-family: 'Poppins', sans-serif !important;
-    "
-  >
+  <body>
     <!-- container login -->
-    <section class="section" style="padding-bottom: 50px">
+    <section class="section rounded-circle" style="padding-bottom: 50px">
       <div class="container mt-3">
-        <div class="row mx-lg-auto" style="padding-top: 93px">
-          <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8 mx-auto">
+        <div class="row mx-lg-auto" style="padding-top: 92px">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-5 col-xl-5 mx-auto">
             <div class="login-brand" style="text-align: center">
               <img
                 src="img/logo.svg"
@@ -43,15 +37,30 @@
                 alt=""
               />
             </div>
-            <div style="padding-top: 38px">
-              <div class="card card-primary" style="background-color: #f1eae1">
-                <div class="card-body">
+            <div style="padding-top: 26px">
+              <div
+                class="card card-primary container-login"
+                style="background-color: #f1eae1; height: 380px"
+              >
+                <div class="card-title">
+                  <p
+                    class="fw-semibold text-center pt-3"
+                    style="font-size: 15px; letter-spacing: 1.5px"
+                  >
+                    Selamat Datang
+                  </p>
+                  <p class="text-center fw-medium" style="font-size: 12px">
+                    Silahkan Login dengan <br />
+                    Username dan Password Anda
+                  </p>
+                </div>
+                <div class="card-body" style="padding-top: 25px">
                   <form action="">
                     <div class="form-group">
                       <label
                         for="username"
                         class="fw-semibold"
-                        style="font-size: 15px"
+                        style="font-size: 15px; letter-spacing: 1.5px"
                         >Username</label
                       >
                       <input type="text" class="form-control" />
@@ -60,21 +69,21 @@
                       <label
                         for="Password"
                         class="fw-semibold"
-                        style="font-size: 15px"
+                        style="font-size: 15px; letter-spacing: 1.5px"
                         >Password</label
                       >
                       <input type="password" class="form-control" />
                     </div>
                     <div
                       class="form-group text-center"
-                      style="padding-top: 41px"
+                      style="padding-top: 28px"
                     >
                       <a
                         href="dashboard.html"
-                        class="btn btn-lg btn-block fw-semibold text-white"
+                        class="button-login btn btn-lg btn-block fw-semibold text-white"
                         style="
-                          padding-right: 30px;
-                          padding-left: 30px;
+                          padding-right: 40px;
+                          padding-left: 40px;
                           font-size: 15px;
                           background-color: #b16810;
                           box-shadow: 0 4px 2px -2px gray;
