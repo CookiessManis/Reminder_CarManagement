@@ -3,11 +3,31 @@ body {
   font-family: "Poppins", sans-serif !important;
 }
 
-/* .card {
+.offcanvas {
+  background-color: #8a8635;
+}
+.card {
   background-color: #dac0a3;
-  box-shadow: 0 4px 2px -2px gray;
-} */
+  box-shadow: 0 4px 2px -2px black;
+}
 
+.card-login {
+  box-shadow: 0 -4px 5px #439bdb, 0 4px 2px -2px black;
+}
+
+.icon-cards {
+  padding-top: 3px;
+}
+
+.icon-text-vehicle {
+  font-size: 17px;
+  /* -webkit-text-stroke: 0.4px black; */
+}
+
+.icon-text-value {
+  font-size: 15px;
+  /* -webkit-text-stroke: 0.2px black; */
+}
 .hamburger-icon {
   display: flex;
   flex-direction: column;
@@ -43,6 +63,11 @@ body {
   }
   .table-td {
     font-size: 17px;
+  }
+
+  .icon-cards {
+    padding-top: 7px;
+    padding-left: 20px;
   }
 }
 /* Responsive */
