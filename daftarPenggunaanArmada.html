@@ -13,24 +13,6 @@
       rel="stylesheet"
     />
 
-    <!-- css -->
-    <style>
-      .hamburger-icon {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 24px;
-        width: 30px;
-        cursor: pointer;
-      }
-      .hamburger-icon span {
-        width: 100%;
-        height: 2px;
-        background-color: black;
-        transition: all 0.3 ease-in-out;
-      }
-    </style>
-
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -46,6 +28,9 @@
       integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
       crossorigin="anonymous"
     ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body class="" style="background-color: #cfb89c">
     <!-- sidebar -->
@@ -157,65 +142,56 @@
               <tr class="align-middle">
                 <th
                   scope="col"
-                  style="font-size: 15px"
-                  class="text-center border-black border"
+                  class="table-th text-center border-black border"
                 >
                   Tanggal
                 </th>
                 <th
                   scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
+                  class="table-th text-center border border-black"
                 >
                   Lokasi
                 </th>
                 <th
                   scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
+                  class="table-th text-center border border-black"
                 >
                   Acara / Kegiatan
                 </th>
                 <th
                   scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
+                  class="table-th text-center border border-black"
                 >
                   Waktu
                 </th>
                 <th
                   scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
+                  class="table-th text-center border border-black"
                 >
                   Jumlah Personil
                 </th>
                 <th
                   scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
+                  class="table-th text-center border border-black"
                 >
                   Armada
                 </th>
                 <th
                   scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
+                  class="table-th text-center border border-black"
                 >
                   Driver
                 </th>
 
                 <th
                   scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
+                  class="table-th text-center border border-black"
                 >
                   Konfirmasi
                 </th>
                 <th
                   scope="col"
-                  style="font-size: 15px"
-                  class="text-center border border-black"
+                  class="table-th text-center border border-black"
                 >
                   Keterangan
                 </th>
@@ -223,49 +199,28 @@
             </thead>
             <tbody class="align-middle">
               <tr>
-                <td style="font-size: 10px" class="text-center fw-medium">
-                  30/07/2023
-                </td>
-                <td
-                  style="font-size: 10px"
-                  class="text-center border border-black fw-medium"
-                >
+                <td class="table-td text-center fw-medium">30/07/2023</td>
+                <td class="table-td text-center border border-black fw-medium">
                   Bantul
                 </td>
-                <td
-                  style="font-size: 10px"
-                  class="text-center border border-black fw-medium"
-                >
+                <td class="table-td text-center border border-black fw-medium">
                   Sosialisasi
                 </td>
-                <td
-                  style="font-size: 10px"
-                  class="text-center border border-black fw-medium"
-                >
+                <td class="table-td text-center border border-black fw-medium">
                   02.00 - 04.00
                 </td>
-                <td
-                  style="font-size: 10px"
-                  class="text-center border border-black fw-medium"
-                >
+                <td class="table-td text-center border border-black fw-medium">
                   12
                 </td>
                 <td
-                  style="font-size: 10px"
-                  class="text-center border border-black fw-medium text-black"
+                  class="table-td text-center border border-black fw-medium text-black"
                 >
                   AB2626AB/ Mobil 4x4
                 </td>
-                <td
-                  style="font-size: 10px"
-                  class="text-center border border-black fw-medium"
-                >
+                <td class="table-td text-center border border-black fw-medium">
                   Budi
                 </td>
-                <td
-                  style="font-size: 10px"
-                  class="text-center border border-black"
-                >
+                <td class="table-td text-center border border-black">
                   <button
                     type="button"
                     class="btn btn-primary shadow"
@@ -276,10 +231,7 @@
                     Selesai
                   </button>
                 </td>
-                <td
-                  style="font-size: 10px"
-                  class="text-center border border-black"
-                >
+                <td class="table-td text-center border border-black">
                   <div class="d-flex gap-2">
                     <button
                       type="button"
@@ -355,7 +307,10 @@
               <label class="form-label">Armada</label>
               <input type="text" class="form-control" />
             </div>
-            <div class="mb-3"></div>
+            <div class="mb-3">
+              <label for="" class="form-label">Pengemudi</label>
+              <input type="text" class="form-control" />
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary">Simpan</button>
@@ -412,33 +367,36 @@
           <div class="modal-body">
             <div class="mb-3">
               <label for="" class="form-label">Tanggal Kegiatan</label>
-              <input type="date" class="form-control" />
+              <input type="date" class="form-control" value="2023-03-02" />
             </div>
             <div class="mb-3">
               <label for="" class="form-label">Lokasi Kegiatan</label>
-              <input type="text" class="form-control" />
+              <input type="text" class="form-control" value="Yogyakarta" />
             </div>
             <div class="mb-3">
               <label for="" class="form-label">Acara Kegiataan</label>
-              <textarea name="" class="form-control"></textarea>
+              <textarea name="" class="form-control">Sosialisasi</textarea>
             </div>
             <div class="mb-3">
               <label for="" class="form-label">Waktu Berangkat</label>
-              <input type="time" class="form-control" />
+              <input type="time" class="form-control" value="02:00" />
             </div>
             <div class="mb-3">
               <label class="form-label">Waktu Pulang</label>
-              <input type="time" class="form-control" />
+              <input type="time" class="form-control" value="04:00" />
             </div>
             <div class="mb-3">
               <label class="form-label">Jumlah Personil</label>
-              <input type="number" class="form-control" />
+              <input type="number" class="form-control" value="12" />
             </div>
             <div class="mb-3">
               <label class="form-label">Armada</label>
-              <input type="text" class="form-control" />
+              <input
+                type="text"
+                class="form-control"
+                value="AB262626AB / Mobil 4x4"
+              />
             </div>
-            <div class="mb-3"></div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary">Simpan</button>
