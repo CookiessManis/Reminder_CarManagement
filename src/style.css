@@ -1,7 +1,12 @@
 body {
-  background-color: #cfb89c;
+  background-color: #618264;
   font-family: "Poppins", sans-serif !important;
 }
+
+/* .card {
+  background-color: #dac0a3;
+  box-shadow: 0 4px 2px -2px gray;
+} */
 
 .hamburger-icon {
   display: flex;
@@ -20,9 +25,6 @@ body {
 
 .card-container .card {
   box-shadow: 0px 2px 4px black;
-}
-
-.table-th {
 }
 
 /* PC VERSION */
