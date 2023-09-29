@@ -3,11 +3,14 @@ body {
   font-family: "Poppins", sans-serif !important;
 }
 
+.button-logout {
+  background-color: #c4a31d;
+}
 .offcanvas {
   background-color: #8a8635;
 }
 .card {
-  background-color: #dac0a3;
+  background-color: #fff;
   box-shadow: 0 4px 2px -2px black;
 }
 
@@ -23,6 +26,7 @@ body {
 .icon-text-vehicle {
   font-size: 17px;
   padding-left: 35px;
+
   /* -webkit-text-stroke: 0.4px black; */
 }
 
