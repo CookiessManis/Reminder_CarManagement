@@ -79,14 +79,14 @@
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                   <a
-                    class="nav-link active text-white"
+                    class="nav-link active "
                     aria-current="page"
                     href="dashboard.html"
                     >Dashboard Utama</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tablePemeliharaanKendaraan.html"
+                  <a class="nav-link active text-white" href="tablePemeliharaanKendaraan.html"
                     >Pemeliharaan Kendaraan</a
                   >
                 </li>
@@ -158,10 +158,9 @@
     <div class="card-header px-3">
       <!-- header -->
       <h1
-        class="fw-semibold"
-        style="font-size: 15px; color: white; padding-top: 25px"
+        class="header-container fw-semibold text-white"
       >
-        Dashboard Penggunaan Armada
+        Dashboard Pemeliharaan Kendaraan
       </h1>
 
       <nav
@@ -173,15 +172,13 @@
           <li class="breadcrumb-item">
             <a
               href="#"
-              class="text-decoration-none text-white"
-              style="color: #fff; opacity: 50%; font-size: 15px"
+              class="breadcrumb-text text-decoration-none text-white fw-medium"
               >Dashboard</a
             >
           </li>
           <li
-            class="breadcrumb-item active text-white"
+            class="breadcrumb-text-2 breadcrumb-item active text-white fw-medium"
             aria-current="page"
-            style="font-size: 15px"
           >
             Pemeliharaan Kendaraan
           </li>
@@ -190,9 +187,10 @@
     </div>
 
     <!-- Table Pemeliharaan -->
-    <div class="ps-3 px-md-3" style="padding-top: 17px">
-      <div class="bg-white" style="border-radius: 10px">
-        <div class="bg-white">
+    <div class="ps-3 px-md-3 " style="padding-top: 17px">
+      <div class="bg-white rounded-3" style="border-radius: 10px">
+
+        <div class="bg-white rounded-3">
         <!-- search input -->
         <div class="d-flex justify-content-between">
           <div class="input-group">
@@ -208,8 +206,8 @@
             </div>
           </div>
 
-          <div class="input-group px-2 py-2">
-            <div class="ms-auto" style="width: 180px">
+          <div class="input-group px-2 py-2 ">
+            <div class="ms-auto" style="width: 220px">
               <div
                 class="d-flex justify-content-end border border-black rounded-1"
               >
@@ -217,7 +215,7 @@
                 <form class="d-flex" role="search">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control "
                     placeholder="Jenis Kendaraan"
                   />
                   <button type="submit" class="btn">
@@ -321,11 +319,29 @@
                   </button>
                 </td>
               </tr>
+                
             </tbody>
           </table>
+         
         </div>
       </div>
+    
+      <!-- pagination -->
+      <div class="px-2 py-2">
+    <div class="d-flex justify-content-end justify-content-sm-end">
+               <nav aria-label="Page navigation example" class="float-end float-sm-end">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
     </div>
+    </div>
+      </div>
+
     <!-- end Table -->
 
     <!-- btn klik modal detail -->
@@ -495,13 +511,6 @@
             <label for="" class="form-label">KIR</label>
             <input type="date" class="form-control">
           </div>
-          <div class="col-12 mb-3">
-            <p class="text-center">Catatan Kerusakan</p>
-           <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea"></label>
-            </div>
-          </div>
 
         </div>
       </div>
@@ -511,6 +520,14 @@
     </div>
   </div>
 </div>
+
+<!-- footer -->
+
+    <footer class="">
+      <p class="fw-medium px-3 text-center">
+        COPYRIGHT © 2023 SATUAN POLISI PAMONG PRAJA DAERAH ISTIMEWA YOGYAKARTA
+      </p>
+    </footer>
    
 
     <script
