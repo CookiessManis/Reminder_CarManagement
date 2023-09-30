@@ -72,6 +72,8 @@ footer {
   font-size: 13px;
 }
 
+/* END */
+
 /* PC VERSION */
 @media only screen and (min-width: 1200px) {
   .font-change-th {
