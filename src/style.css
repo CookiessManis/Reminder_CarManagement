@@ -6,15 +6,15 @@ body {
 }
 
 .breadcrumb-text {
-  font-size: 15px;
+  font-size: 17px;
   opacity: 50%;
 }
 .breadcrumb-text-2 {
-  font-size: 15px;
+  font-size: 17px;
   color: #b4b4b3;
 }
 .header-container {
-  font-size: 15px;
+  font-size: 19px;
   padding-top: 25px;
 }
 .button-logout {
@@ -69,7 +69,7 @@ body {
 }
 
 footer {
-  height: 50px;
+  height: 70px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -124,6 +124,9 @@ footer p {
   }
   .breadcrumb-text-2 {
     font-size: 20px;
+  }
+  footer {
+    height: 50px;
   }
 }
 /* Responsive */
