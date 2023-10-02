@@ -165,9 +165,7 @@
     <!-- Header -->
     <div class="card-header px-3">
       <!-- header -->
-      <h1 class="header-container fw-semibold text-white">
-        Dashboard Penggunaan Armada
-      </h1>
+      <h1 class="header-container fw-semibold">Dashboard Penggunaan Armada</h1>
 
       <nav
         aria-label="breadcrumb"
@@ -176,14 +174,12 @@
       >
         <ol class="breadcrumb justify-content-end">
           <li class="breadcrumb-item">
-            <a
-              href="#"
-              class="breadcrumb-text text-decoration-none text-white fw-medium"
+            <a href="#" class="breadcrumb-text text-decoration-none fw-medium"
               >Dashboard</a
             >
           </li>
           <li
-            class="breadcrumb-text-2 breadcrumb-item active text-white fw-medium"
+            class="breadcrumb-text-2 breadcrumb-item active fw-medium"
             aria-current="page"
           >
             Penggunaan Armada
@@ -194,170 +190,387 @@
 
     <!-- Table Pemeliharaan -->
     <div class="ps-3 px-md-3" style="padding-top: 17px">
-      <div class="bg-white rounded-3">
-        <!-- search input -->
-        <div class="d-flex justify-content-between">
-          <div class="input-group">
-            <div class="d-flex justify-content-between px-2 py-2">
-              <button
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#tambahPenggunaanArmada"
-              >
-                <i class="fa-solid fa-plus"></i> Tambah
-              </button>
+      <div class="bg-white rounded-3" style="border-radius: 10px">
+        <div class="bg-white rounded-3">
+          <!-- search input -->
+          <div class="d-flex justify-content-between">
+            <div class="input-group">
+              <div class="d-flex justify-content-between px-2 py-2">
+                <button
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#tambahPenggunaanArmada"
+                >
+                  <i class="fa-solid fa-plus"></i> Tambah
+                </button>
+              </div>
             </div>
-          </div>
 
-          <div class="input-group px-2 py-2">
-            <div class="ms-auto" style="width: 220px">
-              <div
-                class="d-flex justify-content-end border border-black rounded-1"
-              >
-                <!-- search input -->
-                <form class="d-flex" role="search">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Jenis Kendaraan"
-                  />
-                  <button type="submit" class="btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </form>
+            <div class="input-group px-2 py-2">
+              <div class="ms-auto" style="width: 220px">
+                <div
+                  class="d-flex justify-content-end border border-black rounded-1"
+                >
+                  <!-- search input -->
+                  <form class="d-flex" role="search">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Jenis Kendaraan"
+                    />
+                    <button type="submit" class="btn">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- End Search input -->
-        <div class="table-responsive px-2" style="padding-top: 10px">
-          <table class="table border border-black">
-            <thead>
-              <tr class="align-middle">
-                <th
-                  scope="col"
-                  class="table-th text-center border-black border"
-                >
-                  Tanggal
-                </th>
-                <th
-                  scope="col"
-                  class="table-th text-center border border-black"
-                >
-                  Lokasi
-                </th>
-                <th
-                  scope="col"
-                  class="table-th text-center border border-black"
-                >
-                  Acara / Kegiatan
-                </th>
-                <th
-                  scope="col"
-                  class="table-th text-center border border-black"
-                >
-                  Waktu
-                </th>
-                <th
-                  scope="col"
-                  class="table-th text-center border border-black"
-                >
-                  Jumlah Personil
-                </th>
-                <th
-                  scope="col"
-                  class="table-th text-center border border-black"
-                >
-                  Armada
-                </th>
-                <th
-                  scope="col"
-                  class="table-th text-center border border-black"
-                >
-                  Driver
-                </th>
-
-                <th
-                  scope="col"
-                  class="table-th text-center border border-black"
-                >
-                  Konfirmasi
-                </th>
-                <th
-                  scope="col"
-                  class="table-th text-center border border-black"
-                >
-                  Keterangan
-                </th>
-              </tr>
-            </thead>
-            <tbody class="align-middle">
-              <tr>
-                <td class="table-td text-center fw-medium">30/07/2023</td>
-                <td class="table-td text-center border border-black fw-medium">
-                  Bantul
-                </td>
-                <td class="table-td text-center border border-black fw-medium">
-                  Sosialisasi
-                </td>
-                <td class="table-td text-center border border-black fw-medium">
-                  02.00 - 04.00
-                </td>
-                <td class="table-td text-center border border-black fw-medium">
-                  12
-                </td>
-                <td
-                  class="table-td text-center border border-black fw-medium text-black"
-                >
-                  AB2626AB/ Mobil 4x4
-                </td>
-                <td class="table-td text-center border border-black fw-medium">
-                  Budi
-                </td>
-                <td class="table-td text-center border border-black">
-                  <button
-                    type="button"
-                    class="btn btn-primary shadow"
-                    style="font-size: 12px"
-                    data-bs-toggle="modal"
-                    data-bs-target="#selesaiModal"
+          <!-- End Search input -->
+          <div class="table-responsive px-2" style="padding-top: 10px">
+            <table class="table border border-black">
+              <thead>
+                <tr class="align-middle">
+                  <th
+                    scope="col"
+                    class="table-th text-center border-black border"
                   >
-                    Selesai
-                  </button>
-                </td>
-                <td class="table-td text-center border border-black">
-                  <div class="d-flex gap-2">
+                    Tanggal
+                  </th>
+                  <th
+                    scope="col"
+                    class="table-th text-center border border-black"
+                  >
+                    Lokasi
+                  </th>
+                  <th
+                    scope="col"
+                    class="table-th text-center border border-black"
+                  >
+                    Acara / Kegiatan
+                  </th>
+                  <th
+                    scope="col"
+                    class="table-th text-center border border-black"
+                  >
+                    Waktu
+                  </th>
+                  <th
+                    scope="col"
+                    class="table-th text-center border border-black"
+                  >
+                    Jumlah Personil
+                  </th>
+                  <th
+                    scope="col"
+                    class="table-th text-center border border-black"
+                  >
+                    Armada
+                  </th>
+                  <th
+                    scope="col"
+                    class="table-th text-center border border-black"
+                  >
+                    Driver
+                  </th>
+
+                  <th
+                    scope="col"
+                    class="table-th text-center border border-black"
+                  >
+                    Konfirmasi
+                  </th>
+                  <th
+                    scope="col"
+                    class="table-th text-center border border-black"
+                  >
+                    Keterangan
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="align-middle">
+                <tr>
+                  <td class="table-td text-center fw-medium">30/07/2023</td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    Bantul
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    Sosialisasi
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    02.00 - 04.00
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    12
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium text-black"
+                  >
+                    AB2626AB/ Mobil 4x4
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    Budi
+                  </td>
+                  <td class="table-td text-center border border-black">
                     <button
                       type="button"
-                      class="btn btn-warning shadow text-white"
+                      class="btn btn-primary shadow"
                       style="font-size: 12px"
                       data-bs-toggle="modal"
-                      data-bs-target="#editModal"
+                      data-bs-target="#selesaiModal"
                     >
-                      Ubah
+                      Selesai
                     </button>
+                  </td>
+                  <td class="table-td text-center border border-black">
+                    <div class="d-flex gap-2">
+                      <button
+                        type="button"
+                        class="btn btn-warning shadow text-white"
+                        style="font-size: 12px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#editModal"
+                      >
+                        Ubah
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-danger shadow"
+                        style="font-size: 12px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#HapusModal"
+                      >
+                        Hapus
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-td text-center fw-medium">30/07/2023</td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    Bantul
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    Sosialisasi
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    02.00 - 04.00
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    12
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium text-black"
+                  >
+                    AB2626AB/ Mobil 4x4
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    Budi
+                  </td>
+                  <td class="table-td text-center border border-black">
                     <button
                       type="button"
-                      class="btn btn-danger shadow"
+                      class="btn btn-primary shadow"
                       style="font-size: 12px"
                       data-bs-toggle="modal"
-                      data-bs-target="#HapusModal"
+                      data-bs-target="#selesaiModal"
                     >
-                      Hapus
+                      Selesai
                     </button>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  </td>
+                  <td class="table-td text-center border border-black">
+                    <div class="d-flex gap-2">
+                      <button
+                        type="button"
+                        class="btn btn-warning shadow text-white"
+                        style="font-size: 12px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#editModal"
+                      >
+                        Ubah
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-danger shadow"
+                        style="font-size: 12px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#HapusModal"
+                      >
+                        Hapus
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-td text-center fw-medium">30/07/2023</td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    Bantul
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    Sosialisasi
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    02.00 - 04.00
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    12
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium text-black"
+                  >
+                    AB2626AB/ Mobil 4x4
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    Budi
+                  </td>
+                  <td class="table-td text-center border border-black">
+                    <button
+                      type="button"
+                      class="btn btn-primary shadow"
+                      style="font-size: 12px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#selesaiModal"
+                    >
+                      Selesai
+                    </button>
+                  </td>
+                  <td class="table-td text-center border border-black">
+                    <div class="d-flex gap-2">
+                      <button
+                        type="button"
+                        class="btn btn-warning shadow text-white"
+                        style="font-size: 12px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#editModal"
+                      >
+                        Ubah
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-danger shadow"
+                        style="font-size: 12px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#HapusModal"
+                      >
+                        Hapus
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-td text-center fw-medium">30/07/2023</td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    Bantul
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    Sosialisasi
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    02.00 - 04.00
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    12
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium text-black"
+                  >
+                    AB2626AB/ Mobil 4x4
+                  </td>
+                  <td
+                    class="table-td text-center border border-black fw-medium"
+                  >
+                    Budi
+                  </td>
+                  <td class="table-td text-center border border-black">
+                    <button
+                      type="button"
+                      class="btn btn-primary shadow"
+                      style="font-size: 12px"
+                      data-bs-toggle="modal"
+                      data-bs-target="#selesaiModal"
+                    >
+                      Selesai
+                    </button>
+                  </td>
+                  <td class="table-td text-center border border-black">
+                    <div class="d-flex gap-2">
+                      <button
+                        type="button"
+                        class="btn btn-warning shadow text-white"
+                        style="font-size: 12px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#editModal"
+                      >
+                        Ubah
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-danger shadow"
+                        style="font-size: 12px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#HapusModal"
+                      >
+                        Hapus
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- footer -->
+    <div class="footer-container">
+      <footer class="px-3">
+        <p class="fw-medium text-center">
+          COPYRIGHT © 2023 SATUAN POLISI PAMONG PRAJA DAERAH ISTIMEWA YOGYAKARTA
+        </p>
+      </footer>
+    </div>
     <!-- END -->
 
-    p
     <!-- modal tambah penggunaan kendaraan -->
     <div
       class="modal fade"
