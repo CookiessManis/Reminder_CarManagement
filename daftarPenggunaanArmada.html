@@ -541,35 +541,41 @@
           <div class="modal-body">
             <div class="mb-3">
               <label for="" class="form-label">Tanggal Kegiatan</label>
-              <input type="date" class="form-control" value="2023-03-02" />
+              <input type="date" class="form-control" />
             </div>
             <div class="mb-3">
               <label for="" class="form-label">Lokasi Kegiatan</label>
-              <input type="text" class="form-control" value="Yogyakarta" />
+              <input type="text" class="form-control" />
             </div>
             <div class="mb-3">
               <label for="" class="form-label">Acara Kegiataan</label>
-              <textarea name="" class="form-control">Sosialisasi</textarea>
+              <textarea name="" class="form-control"></textarea>
             </div>
             <div class="mb-3">
               <label for="" class="form-label">Waktu Berangkat</label>
-              <input type="time" class="form-control" value="02:00" />
+              <input type="time" class="form-control" />
             </div>
             <div class="mb-3">
               <label class="form-label">Waktu Pulang</label>
-              <input type="time" class="form-control" value="04:00" />
+              <input type="time" class="form-control" />
             </div>
             <div class="mb-3">
               <label class="form-label">Jumlah Personil</label>
-              <input type="number" class="form-control" value="12" />
+              <input type="number" class="form-control" />
             </div>
             <div class="mb-3">
               <label class="form-label">Armada</label>
-              <input
-                type="text"
-                class="form-control"
-                value="AB262626AB / Mobil 4x4"
-              />
+              <select id="normalizer">
+                <option selected disabled>Pilih Armada...</option>
+                <option value="mobil">Mobil</option>
+                <option value="motor">Motor</option>
+                <option value="trill">Trill</option>
+                <option value="bus">Bus</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Pengemudi</label>
+              <input type="text" class="form-control" />
             </div>
           </div>
           <div class="modal-footer">
@@ -640,6 +646,9 @@
 
     <script>
       $("#normalize").selectize({ normalize: true });
+    </script>
+    <script>
+      $("#normalizer").selectize({ normalize: true });
     </script>
   </body>
 </html>
