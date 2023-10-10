@@ -4,7 +4,13 @@ body {
   background-repeat: no-repeat;
   font-family: "Poppins", sans-serif !important;
 }
-
+.text-dashboard {
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 25px;
+  text-shadow: 0 4px 4px #000;
+}
 .breadcrumb-text {
   font-size: 17px;
   opacity: 50%;
@@ -27,28 +33,14 @@ body {
   background-color: #fff;
   box-shadow: 0 4px 2px -2px black;
 }
+.card-text {
+  font-size: 40;
+}
 
 .card-login {
   box-shadow: 0 -4px 5px #439bdb, 0 4px 2px -2px black;
 }
 
-.icon-cards {
-  padding-top: 1px;
-  width: 20px;
-}
-
-.icon-text-vehicle {
-  font-size: 17px;
-  padding-left: 35px;
-
-  /* -webkit-text-stroke: 0.4px black; */
-}
-
-.icon-text-value {
-  font-size: 15px;
-  padding-left: 35px;
-  /* -webkit-text-stroke: 0.2px black; */
-}
 .hamburger-icon {
   display: flex;
   flex-direction: column;
@@ -127,6 +119,10 @@ footer p {
   }
   footer {
     height: 50px;
+  }
+  .text-dashboard {
+    font-weight: bold;
+    font-size: 50px;
   }
 }
 /* Responsive */

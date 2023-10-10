@@ -21,7 +21,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href=" <?= base_url('assets/src/style.css') ?>" />
   </head>
   <body>
     <!-- container login -->
@@ -31,7 +31,7 @@
           <div class="col-12 col-sm-10 col-md-8 col-lg-5 col-xl-5 mx-auto">
             <div class="login-brand" style="text-align: center">
               <img
-                src="img/logo.svg"
+                src="<?php echo base_url(); ?>assets/img/logo_.svg"
                 style="width: 105px; height: 125px"
                 class=""
                 alt=""
@@ -55,7 +55,7 @@
                   </p>
                 </div>
                 <div class="card-body" style="padding-top: 22px">
-                  <form action="">
+                  <form method="POST" action="<?php echo base_url('C_login/login')?>">
                     <div class="form-group">
                       <label
                         for="username"
@@ -63,23 +63,25 @@
                         style="font-size: 15px; letter-spacing: 1.5px"
                         >Username</label
                       >
-                      <input type="text" class="form-control" />
+                      <input type="text" class="form-control" id="username" name = "username" />
                     </div>
                     <div class="form-group" style="padding-top: 20px">
                       <label
+                      
                         for="Password"
                         class="fw-semibold"
                         style="font-size: 15px; letter-spacing: 1.5px"
                         >Password</label
                       >
-                      <input type="password" class="form-control" />
+                      <input type="password" class="form-control" name="password"
+                      id="password" placeholder="Password" />
                     </div>
                     <div
                       class="form-group text-center"
                       style="padding-top: 28px"
                     >
-                      <a
-                        href="dashboard.html"
+                      <button
+                      type="submit"
                         class="button-login btn btn-lg btn-block fw-semibold text-white"
                         style="
                           padding-right: 40px;
@@ -91,7 +93,7 @@
                         "
                       >
                         Login
-                      </a>
+                      </button>
                     </div>
                   </form>
                 </div>

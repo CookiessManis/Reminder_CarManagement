@@ -39,7 +39,7 @@
     />
 
     <!-- css -->
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href=" <?= base_url('assets/src/style.css') ?>" />
   </head>
   <body class="h-100">
     <!-- Navbar -->
@@ -88,18 +88,18 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="dashboard.html"
+                    href="<?= base_url('C_dashboard'); ?>"
                     >Dashboard Utama</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tablePemeliharaanKendaraan.html"
+                  <a class="nav-link" href="href="<?php echo base_url('C_kendaraan')?>"
                     >Pemeliharaan Kendaraan</a
                   >
                 </li>
 
                 <li class="nav-item active text-white">
-                  <a class="nav-link" href="daftarPenggunaanArmada.html"
+                  <a class="nav-link" href="<?php echo base_url('C_booking')?>"
                     >Daftar Penggunaan Armada</a
                   >
                 </li>
@@ -263,17 +263,19 @@
                 </tr>
               </thead>
               <tbody class="align-middle">
+                <?php foreach($booking_kendaraan as $bk) : ?>
                 <tr>
-                  <td class="table-td text-center fw-medium">30/07/2023</td>
-                  <td class="table-td text-center fw-medium">Bantul</td>
-                  <td class="table-td text-center fw-medium">Dinas</td>
-                  <td class="table-td text-center fw-medium">03:00 - 04:00</td>
-                  <td class="table-td text-center fw-medium">12</td>
+                  <td class="table-td text-center fw-medium"><?= $bk->tanggal; ?></td>
+                  <td class="table-td text-center fw-medium"><?= $bk->lokasi; ?></td>
+                  <td class="table-td text-center fw-medium"><?= $bk->acara; ?></td>
+                  <td class="table-td text-center fw-medium"><?= $bk->waktu_berangkat; ?> - <?= $bk->waktu_pulang; ?></td>
+                  <td class="table-td text-center fw-medium"><?= $bk->jumlah_personil; ?></td>
                   <td class="table-td text-center fw-medium">
-                    AB 2222 ac / mobil 4x4
+                    <?= $bk->no_kendaraan; ?> /<?= $bk->jenis_kendaraan; ?>
                   </td>
-                  <td class="table-td text-center fw-medium">budi</td>
+                  <td class="table-td text-center fw-medium"><?= $bk->driver; ?></td>
                   <td class="table-td text-center">
+                    <?php if($bk->status_booking== "1"){?>
                     <button
                       class="btn btn-primary shadow"
                       data-bs-toggle="modal"
@@ -302,40 +304,9 @@
                       >
                         Hapus
                       </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="table-td text-center fw-medium">30/07/2023</td>
-                  <td class="table-td text-center fw-medium">Bantul</td>
-                  <td class="table-td text-center fw-medium">Dinas</td>
-                  <td class="table-td text-center fw-medium">03:00 - 04:00</td>
-                  <td class="table-td text-center fw-medium">12</td>
-                  <td class="table-td text-center fw-medium">
-                    AB 2222 ac / mobil 4x4
-                  </td>
-                  <td class="table-td text-center fw-medium">budi</td>
-                  <td class="table-td text-center">
-                    <button
-                      class="btn btn-primary shadow"
-                      data-bs-toggle="modal"
-                      data-bs-target="#selesaiModal"
-                    >
-                      selesai
-                    </button>
-                  </td>
-                  <td class="table-td text-center">
-                    <div class="d-flex gap-2">
-                      <button
-                        type="button"
-                        class="btn btn-warning shadow text-white"
-                        style="font-size: 12px"
-                        data-bs-toggle="modal"
-                        data-bs-target="#editModal"
-                      >
-                        Ubah
-                      </button>
-                      <button
+                      <?php }
+                      else{?>
+                        <button
                         type="button"
                         class="btn btn-danger shadow"
                         style="font-size: 12px"
@@ -344,51 +315,11 @@
                       >
                         Hapus
                       </button>
+                      <?php }?>
                     </div>
                   </td>
                 </tr>
-                <tr>
-                  <td class="table-td text-center fw-medium">30/07/2023</td>
-                  <td class="table-td text-center fw-medium">Bantul</td>
-                  <td class="table-td text-center fw-medium">Dinas</td>
-                  <td class="table-td text-center fw-medium">03:00 - 04:00</td>
-                  <td class="table-td text-center fw-medium">12</td>
-                  <td class="table-td text-center fw-medium">
-                    AB 2222 ac / mobil 4x4
-                  </td>
-                  <td class="table-td text-center fw-medium">budi</td>
-                  <td class="table-td text-center">
-                    <button
-                      class="btn btn-primary shadow"
-                      data-bs-toggle="modal"
-                      data-bs-target="#selesaiModal"
-                    >
-                      selesai
-                    </button>
-                  </td>
-                  <td class="table-td text-center">
-                    <div class="d-flex gap-2">
-                      <button
-                        type="button"
-                        class="btn btn-warning shadow text-white"
-                        style="font-size: 12px"
-                        data-bs-toggle="modal"
-                        data-bs-target="#editModal"
-                      >
-                        Ubah
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-danger shadow"
-                        style="font-size: 12px"
-                        data-bs-toggle="modal"
-                        data-bs-target="#HapusModal"
-                      >
-                        Hapus
-                      </button>
-                    </div>
-                  </td>
-                </tr>
+                <?php endforeach; ?>
               </tbody>
             </table>
           </div>
